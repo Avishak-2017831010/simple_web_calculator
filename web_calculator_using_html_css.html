@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <style>
+      .formstyle{
+        margin:auto;
+        width:300px;
+        height:500px
+      }
+
+
+    input{
+      width:50px;
+      height:30px;
+      color: White;
+      background-color:Black
+
+    }
+
+    #clear{
+      width:105px;
+      color:Red
+
+    }
+
+    #screen{
+      width: 152px;
+      background-color:Grey;
+      color:Black;
+
+    }
+
+    </style>
+
+  </head>
+
+  <title>"First Baic Calculator"</title>
+  <body>
+
+    <div class="formstyle">
+      <form name="answer">
+
+        <input type="text" name="result_screen" id="screen"> <br></br>
+
+        <input type="button" value=" 1 " onclick="answer.result_screen.value +='1'">
+        <input type="button" value=" 2 " onclick="answer.result_screen.value +='2'">
+        <input type="button" value=" 3 " onclick="answer.result_screen.value +='3'">
+        <br></br>
+
+        <input type="button" value="4" onclick="answer.result_screen.value +='4'">
+        <input type="button" value="5" onclick="answer.result_screen.value +='5'">
+        <input type="button" value="6" onclick="answer.result_screen.value +='6'">
+        <br></br>
+
+        <input type="button" value="7" onclick="answer.result_screen.value +='7'">
+        <input type="button" value="8" onclick="answer.result_screen.value +='8'">
+        <input type="button" value="9" onclick="answer.result_screen.value +='9'">
+        <br></br>
+
+        <input type="button" value="+" onclick="answer.result_screen.value +='+'">
+        <input type="button" value="-" onclick="answer.result_screen.value +='-'">
+        <input type="button" value="*" onclick="answer.result_screen.value +='*'">
+        <br></br>
+
+        <input type="button" value="/" onclick="answer.result_screen.value +='/'">
+        <input type="button" value="0" onclick="answer.result_screen.value +='0'">
+        <input type="button" value="%" onclick="answer.result_screen.value +='%'">
+        <br></br>
+
+        <input type="button" value="=" onclick="answer.result_screen.value=eval(answer.result_screen.value)">
+        <input type="button" value="Clear" onclick="answer.result_screen.value=''" id="clear">
+
+        <br></br>
+
+
+
+        </form>
+
+        </div>
+
+
+
+
+  </body>
+</html>
